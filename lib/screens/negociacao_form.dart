@@ -20,6 +20,11 @@ const tickerRepo = <String>[
 ];
 
 class NegociacaoForm extends StatefulWidget {
+
+  final Negociacao negociacao;
+
+  const NegociacaoForm({Key key, this.negociacao}) : super(key: key);
+
   @override
   _NegociacaoFormState createState() => _NegociacaoFormState();
 }
@@ -150,7 +155,8 @@ class _NegociacaoFormState extends State<NegociacaoForm> {
                 child: TextFormField(
                   decoration: InputDecoration(labelText: 'Data de negociação'),
                   validator: (dataOperacao) {
-                    Pattern pattern = r'^[0-3][0-9]\/[0-1][0-9]\/[1-2][0-9]{3}$';
+                    Pattern pattern =
+                        r'^[0-3][0-9]\/[0-1][0-9]\/[1-2][0-9]{3}$';
                     RegExp regex = new RegExp(pattern);
                     if (dataOperacao.isEmpty) {
                       return 'Informe a data de negociação';

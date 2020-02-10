@@ -7,13 +7,8 @@ class Negociacao {
   double _preco;
   String _dataOperacao;
 
-  Negociacao(this._id, 
-             this._corretora, 
-             this._ticker, 
-             this._tipoOperacao,
-             this._quantidade,
-             this._preco,
-             this._dataOperacao);
+  Negociacao(this._id, this._corretora, this._ticker, this._tipoOperacao,
+      this._quantidade, this._preco, this._dataOperacao);
 
   get id => _id;
   set id(v) => _id = v;
@@ -39,5 +34,15 @@ class Negociacao {
   @override
   String toString() {
     return "Negociacao{ id: $_id, corretora: $_corretora, ticker: $_ticker, tipoOperacao: $_tipoOperacao, quantidade: $_quantidade, preco: $_preco, dataOperacao: $_dataOperacao }";
+  }
+
+  Negociacao.fromJson(Map<String, dynamic> json) {
+    _id = json['id'];
+    _ticker = json['ticker'];
+    _tipoOperacao = json['tipoOperacao'];
+    _corretora = json['corretora'];
+    _quantidade = int.parse(json['quantidade']);
+    _preco = double.parse(json['preco']);
+    _dataOperacao = json['dataOperacao'];
   }
 }

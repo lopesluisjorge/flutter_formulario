@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "corretora": "Clear",
+        "ticker": "ITSA4",
+        "tipoOperacao": "Compra",
+        "quantidade": "500",
+        "preco": "13.30",
+        "dataOperacao": "02/12/2019"
+    },
+    {
+        "id": 2,
+        "corretora": "Clear",
+        "ticker": "B3SA3",
+        "tipoOperacao": "Compra",
+        "quantidade": "1000",
+        "preco": "41.60",
+        "dataOperacao": "30/12/2019"
+    },
+    {
+        "id": 3,
+        "corretora": "Clear",
+        "ticker": "ITSA4",
+        "tipoOperacao": "Venda",
+        "quantidade": "200",
+        "preco": "14.30",
+        "dataOperacao": "02/01/2020"
+    },
+    {
+        "id": 4,
+        "corretora": "Clear",
+        "ticker": "B3SA3",
+        "tipoOperacao": "Venda",
+        "quantidade": "200",
+        "preco": "50.76",
+        "dataOperacao": "04/02/2020"
+    },
+    {
+        "id": 5,
+        "corretora": "Clear",
+        "ticker": "ITSA4",
+        "tipoOperacao": "Compra",
+        "quantidade": "2000",
+        "preco": "12.80",
+        "dataOperacao": "07/02/2020"
+    },
+    {
+        "id": 6,
+        "corretora": "Clear",
+        "ticker": "KLBN11",
+        "tipoOperacao": "Compra",
+        "quantidade": "2000",
+        "preco": "20.60",
+        "dataOperacao": "07/02/2020"
+    }
+]
